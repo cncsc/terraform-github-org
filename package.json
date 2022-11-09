@@ -26,6 +26,7 @@
   "devDependencies": {
     "@cncsc/cncsc-changelog-convention": "^1.0.0",
     "@cncsc/eslint-config": "^0.1.0",
+    "@cncsc/semantic-release-config": "^1.0.2",
     "@semantic-release/exec": "^6.0.3",
     "eslint": "^8.26.0",
     "marked": "^4.0.12",
