@@ -166,8 +166,8 @@ variable "secret_scanning_push_protection_enabled_for_new_repositories" {
 }
 
 variable "blocked_users" {
-  type        = list(string)
-  description = "A list of users who are barred from joining and requesting to join the organization."
+  type        = set(string)
+  description = "A set of users who are barred from joining and requesting to join the organization."
   default     = []
 }
 
