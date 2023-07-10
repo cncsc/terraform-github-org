@@ -29,7 +29,7 @@ resource "github_team" "team" {
 resource "github_team_membership" "maintainer" {
   for_each = var.maintainers
   team_id  = github_team.team.id
-  username = each.value
+  username = each.key
   role     = "maintainer"
 }
 
@@ -40,6 +40,6 @@ resource "github_team_membership" "maintainer" {
 resource "github_team_membership" "member" {
   for_each = var.members
   team_id  = github_team.team.id
-  username = each.value
+  username = each.key
   role     = "member"
 }
